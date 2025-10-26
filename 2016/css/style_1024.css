@@ -1,0 +1,208 @@
+
+/*landing page banner - added margins*/
+
+.wrap-center{
+  margin-left:70px;
+  margin-right:70px;
+  position: relative;
+}
+/*end of banner changes */
+
+/* defines background colour for all sections with the visible-sm class*/
+.challenge-cub123 {
+  background-color: #29aae2;
+
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* end of visible-sm attributes */
+
+/* challenges and solutions background (not fixed) */
+.home {
+  background: url(../images/vision.png) no-repeat center center; 
+  display: table;
+
+  width:1024px;
+  height:768px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.challenge1 {
+  width:1024px;
+  height:768px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/billion_device.png) no-repeat center center; 
+  display: table;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.challenge2 {
+  width:1024px;
+  height:768px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/citizen.png) no-repeat center center; 
+  display: table;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.challenge3 { 
+  width:1024px;
+  height:768px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/circulatory.png) no-repeat center center; 
+  display: table;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.solution1 { 
+  width:1024px;
+  height:605px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/solution-power.png) no-repeat center center; 
+  display: table;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.solution2 { 
+  width:1024px;
+  height:605px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/solution-comunication.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.solution3 { 
+  width:1024px;
+  height:605px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/solution-management.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.solution4 {   
+  width:1024px;
+  height:605px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/citizen_sensing.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.solution5 { 
+  width:1024px;
+  height:605px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/citizen-sensing2.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.solution6 { 
+  width:1024px;
+  height:605px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/solution-circulatory1.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.solution7 { 
+  width:1024px;
+  height:605px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(../images/solution-circulatory2.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* end */
+
+/* about section specs and gradient */
+#about { 
+  padding-top: 70px;
+  padding-bottom: 100px;
+  padding-right: 20px;
+  background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,235,204,1) 17%, rgba(236,181,145,1) 73%, rgba(204,202,200,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(17%, rgba(255,235,204,1)), color-stop(73%, rgba(236,181,145,1)), color-stop(100%, rgba(204,202,200,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,235,204,1) 17%, rgba(236,181,145,1) 73%, rgba(204,202,200,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,235,204,1) 17%, rgba(236,181,145,1) 73%, rgba(204,202,200,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,235,204,1) 17%, rgba(236,181,145,1) 73%, rgba(204,202,200,1) 100%); /* ie10+ */
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,235,204,1) 17%, rgba(236,181,145,1) 73%, rgba(204,202,200,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCCAC8', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */
+}
+
+/* video page specs */
+#video { 
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left:2px;
+  background: #ffffff; 
+}
+
+
+/* tweak for team photos */
+.photo{
+  margin-bottom:1em;
+}
+
+/*tweak for top margin spacing text*/
+.whitetype h1{
+  margin-top: 1.5em;
+}
+.whitetype h2{
+  margin-top: 1.5em;
+}
+.label_billion_dev h4{
+  margin-top: 6em;
+}
+.label_citizen_engagement h4{
+  margin-top: 6em;
+}
+.label_ecosystems h4{
+  margin-top: 6em;
+}
+

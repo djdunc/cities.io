@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>fixed grid</title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.8&libraries=geometry&sensor=false"></script>
+    <script type="text/javascript ">
+    var map;
+    var infowindow = new google.maps.InfoWindow();
+    var rectArr = [];
+    var cols = ["red ", "blue ", "green ", "yellow ", "orange ", "gray "]
+
+    function initialize() {
+        var rectangle;
+        var coachella = new google.maps.LatLng(51.5434743, -0.0169848);
+        var myOptions = {
+            zoom: 15,
+            center: coachella,
+            mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        map = new google.maps.Map(document.getElementById("map_canvas "),
+            myOptions);
+        drawRects();
+    }
+
+
+
+    function drawRects() {
+        var lora = new google.maps.LatLng(51.538401, -0.013056)
+        var sLoraX = -10; 	// number of squares to left of Lora
+        var eLoraX = 8;		// number of squares to right of Lora
+        var sLoraY = -15;	// number of squares above Lora
+        var eLoraY = 4;		// number of squares below left of Lora
+
+        var North = google.maps.geometry.spherical.computeOffset(lora, 1000, -90)
+        var South = google.maps.geometry.spherical.computeOffset(North, 100, -90)
+        var South = google.maps.geometry.spherical.computeOffset(South, 100, 180)
+
+
+        for (var i = sLoraY; i < eLoraY; i++) {
+            NE = google.maps.geometry.spherical.computeOffset(North, i * 100, 180)
+            SW = google.maps.geometry.spherical.computeOffset(South, i * 100, 180)
+            for (var a = sLoraX; a < eLoraX; a++) {
+                var rectangle = new google.maps.Rectangle();
+                var rectOptions = {
+                    strokeColor: "#FF0000 ",
+                    strokeOpacity: 0.6,
+                    strokeWeight: 2,
+					fillColor: "orange",
+                    fillOpacity: 0.05,
+                    map: map,
+                    bounds: new google.maps.LatLngBounds(SW, NE)
+                };
+                rectangle.setOptions(rectOptions);
+                rectArr.push(rectangle);
+                bindWindow(rectangle, rectArr.length)
+
+                var SW = google.maps.geometry.spherical.computeOffset(SW, 100, 90)
+                var NE = google.maps.geometry.spherical.computeOffset(NE, 100, 90)
+            }
+        }
+    }
+
+    function bindWindow(rectangle, num) {
+        google.maps.event.addListener(rectangle, 'click', function(event) {
+            infowindow.setContent("you clicked on rectangle " + num)
+            infowindow.setPosition(event.latLng)
+            infowindow.open(map);
+        });
+    }
+    </script>
+</head>
+
+<body onload="initialize() ">
+    <div id="map_canvas " style="width:100%; height:900px "></div>
+</body>
+
+</html>

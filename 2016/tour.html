@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>QEOP capstone tour markers</title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.8&libraries=geometry&sensor=false"></script>
+    <script type="text/javascript ">
+    // The following example creates complex markers to indicate tourPoints near
+    // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
+    // to the base of the flagpole.
+
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: {
+                lat: 51.5434743,
+                lng: -0.0169848
+            }
+        });
+
+        setMarkers(map);
+    }
+
+    // Data for the markers consisting of a name, a LatLng and a zIndex for the
+    // order in which these markers should display on top of each other.
+    var tourPoints = [
+        ['Orbit', 51.538401, -0.013056, 5, 'A'],
+        ['Bridge', 51.538353, -0.011047, 4, 'B'],
+        ['High Street', 51.541002, -0.014336, 3, 'C'],
+        ['Mandeville', 51.543421, -0.017464, 2, 'D'],
+        ['Timberlodge', 51.5474421, -0.0146738, 1, 'E']
+    ];
+
+
+    function setMarkers(map) {
+        // Adds markers to the map.
+
+        // Marker sizes are expressed as a Size of X,Y where the origin of the image
+        // (0,0) is located in the top left of the image.
+
+        for (var i = 0; i < tourPoints.length; i++) {
+            var tourPoint = tourPoints[i];
+            var marker = new google.maps.Marker({
+                position: {
+                    lat: tourPoint[1],
+                    lng: tourPoint[2]
+                },
+                map: map,
+                title: tourPoint[0],
+                label: tourPoint[4],
+                zIndex: tourPoint[3]
+            });
+
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    var html = "<b>" + title + "</b>";
+                    infowindow.setContent(html);
+                    infowindow.open(map, marker, html);
+                    // infowindow.setContent(html);
+                    // infowindow.open(map, marker);
+                }
+            })(marker, i));
+        }
+        marker.addListener('mouseover', function() {
+            infowindow.open(map, this);
+        });
+
+        // assuming you also want to hide the infowindow when user mouses-out
+        marker.addListener('mouseout', function() {
+            infowindow.close();
+        });
+
+    }
+    </script>
+</head>
+
+<body onload="initMap() ">
+    <div id="map" style="width:100%; height:900px "></div>
+</body>
+
+</html>

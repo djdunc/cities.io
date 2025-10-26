@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:500,700');
+
+html, body {
+	background-color: #f3f3f3;
+	color: #fff;
+	font: 500 17pt/1 'Dosis', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+	overflow-x: hidden;
+	height: 100%;
+}
+
+a, a:visited, a:hover, a:active {
+	color: #fff;
+	outline: none;
+	text-decoration: none;
+}
+
+section#introduction {
+	z-index: 2;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+section#introduction a {
+	border-bottom: 2px solid #fff;
+}
+
+span#top-line,
+span#bot-line {
+	display: block;
+}
+span#top-line {
+	margin-bottom: 0.7vw;
+}
+
+h1 {
+	background: url('../images/hashtag.png') no-repeat center;
+	background-size: contain;
+	display: block;
+	overflow: hidden;
+	text-indent: -1000px;
+	margin: 0.5rem 0;
+	padding: 0;
+	width: 40vw;
+	height: 15vw;
+}
+
+aside {
+	z-index: 3;
+	position: absolute;
+}
+
+aside#description {
+	bottom: 1rem;
+	left: 1rem;
+}
+aside#description h2 {
+	display: inline;
+	font-size: 0.8rem;
+	margin: 0;
+	padding: 0 0.5rem 0 0;
+}
+aside#description p {
+	display: inline;
+	font-size: 0.7rem;
+	margin: 0;
+	padding: 0;
+}
+
+aside#disclaimer {
+	top: calc(50% - 9.5rem);
+	right: -1rem;
+}
+aside#disclaimer button {
+	background: transparent;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font: 700 0.6rem/1 'Dosis', sans-serif;
+	letter-spacing: 0.1rem;
+	margin: 0;
+	padding: 2rem 0;
+	outline: none;
+	text-shadow: 0px 1px 2px rgba(150, 150, 150, 0.7);
+	text-transform: uppercase;
+	width: 10rem;
+
+    -ms-transform: rotate(90deg) translateX(100%) translateY(100%);
+    -ms-transform-origin: 100% 100%;
+    -webkit-transform: rotate(90deg) translateX(100%) translateY(100%);
+    -webkit-transform-origin: 100% 100%;
+    transform: rotate(90deg) translateX(100%) translateY(100%);
+	transform-origin: 100% 100%;
+}
+
+div#wrapper,
+aside#disclaimer-content {
+	transition: transform 0.3s;
+}
+
+div#wrapper {
+	display: none;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+}
+div#wrapper.pushed {
+  transform: translateX(-40%);
+}
+
+aside#disclaimer-content {
+	top: 0;
+	right: 0;
+	background: #fafafa url('../images/bg-pin.png');
+	background-size: 50%;
+	box-shadow: 1rem 0 1rem 0 rgba(0,0,0,0.3) inset;
+	transform: translateX(100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 40%;
+	height: 100%;
+}
+aside#disclaimer-content.active {
+	transform: translateX(0);
+}
+aside#disclaimer-content p {
+	margin: 1rem 2rem;
+	text-align: center;
+}
+aside#disclaimer-content p.description {
+	color: #aaa;
+	font-size: 0.7rem;
+}
+
+/*aside#title {
+	top: 1rem;
+	right: 1rem;
+}
+aside#title h2 {
+	font-size: 0.7rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+
+aside#description {
+	top: 2rem;
+	right: 1rem;
+}
+aside#description p {
+	font-size: 0.7rem;
+	margin: 0;
+
+    -ms-transform: rotate(90deg) translateX(100%) translateY(100%);
+    -ms-transform-origin: 100% 100%;
+    -webkit-transform: rotate(90deg) translateX(100%) translateY(100%);
+    -webkit-transform-origin: 100% 100%;
+    transform: rotate(90deg) translateX(100%) translateY(100%);
+	transform-origin: 100% 100%;
+}*/
+
+aside#partners {
+	bottom: 1rem;
+	right: 1rem;
+}
+
+aside#partners a {
+	display: block;
+	float: left;
+	overflow: hidden;
+	text-indent: -1000px;
+}
+
+a#logo-uclic {
+	background: url('../images/logo-uclic.png') no-repeat bottom;
+	background-size: contain;
+	margin-right: 0.9rem;
+	width: 5vw;
+	height: 2vw;
+}
+
+a#logo-ucl {
+	background: url('../images/logo-ucl.png') no-repeat bottom;
+	background-size: contain;
+	margin-right: 1rem;
+	width: 4.25vw;
+	height: 2vw;
+}
+
+a#logo-icri {
+	background: url('../images/logo-icri.png') no-repeat bottom;
+	background-size: contain;
+	width: 4.1vw;
+	height: 2vw;
+}
+
+section#quadrants {
+	z-index: 1;
+	position: relative;
+}
+
+section#quadrants div.quadrant {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	width: 50%;
+	height: 50vh;
+}
+section#quadrants div.quadrant.red {
+	background-color: #ed2020;
+}
+section#quadrants div.quadrant.red.image {
+	background-image: url('../images/bg-red.jpg');
+	background-size: cover;
+}
+section#quadrants div.quadrant.yellow {
+	background-color: #ffd20d;
+}
+section#quadrants div.quadrant.yellow.image {
+	background-image: url('../images/bg-yellow.jpg');
+	background-size: cover;
+}
+section#quadrants div.quadrant.cyan {
+	background-color: #13a582;
+}
+section#quadrants div.quadrant.cyan.image {
+	background-image: url('../images/bg-cyan.jpg');
+	background-size: cover;
+}
+section#quadrants div.quadrant.green {
+	background-color: #82b620;
+}
+section#quadrants div.quadrant.green.image {
+	background-image: url('../images/bg-green.jpg');
+	background-size: cover;
+}
+
+section#quadrants div.quadrant span.bg {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+section#quadrants div.quadrant span.bg.bg-active {
+	opacity: 0.1;
+}
+section#quadrants div.quadrant span.bg.bg-1 {
+	background: url('../images/bg-1.jpg') no-repeat center;
+	background-size: cover;
+}
+section#quadrants div.quadrant span.bg.bg-2 {
+	background: url('../images/bg-2.jpg') no-repeat center;
+	background-size: cover;
+}
+section#quadrants div.quadrant span.bg.bg-3 {
+	background: url('../images/bg-3.jpg') no-repeat center;
+	background-size: cover;
+}
+section#quadrants div.quadrant span.bg.bg-4 {
+	background: url('../images/bg-4.jpg') no-repeat center;
+	background-size: cover;
+}
+section#quadrants div.quadrant span.bg.bg-5 {
+	background: url('../images/bg-5.jpg') no-repeat center;
+	background-size: cover;
+}
+section#quadrants div.quadrant span.bg.bg-6 {
+	background: url('../images/bg-6.jpg') no-repeat center;
+	background-size: cover;
+}
+section#quadrants div.quadrant span.bg.bg-7 {
+	background: url('../images/bg-7.jpg') no-repeat center;
+	background-size: cover;
+}
+section#quadrants div.quadrant span.bg.bg-8 {
+	background: url('../images/bg-8.jpg') no-repeat center;
+	background-size: cover;
+}
+
+section#quadrants div.quadrant span.pin {
+	z-index: 2;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-indent: -2000px;
+	width: 20vw;
+	height: 30vh;
+}
+section#quadrants div.quadrant span.pin.red {
+	background: url('../images/pin-red.png') no-repeat center;
+	background-size: contain;
+}
+section#quadrants div.quadrant span.pin.yellow {
+	background: url('../images/pin-yellow.png') no-repeat center;
+	background-size: contain;
+}
+section#quadrants div.quadrant span.pin.cyan {
+	background: url('../images/pin-cyan.png') no-repeat center;
+	background-size: contain;
+}
+section#quadrants div.quadrant span.pin.green {
+	background: url('../images/pin-green.png') no-repeat center;
+	background-size: contain;
+}
+
+div#preloader {
+	background: url("../images/preloader.gif") no-repeat center center;
+	overflow: hidden;
+	text-indent: -100000px;
+	width: 100%;
+	height: 100%;
+}

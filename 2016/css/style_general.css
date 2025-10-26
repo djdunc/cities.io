@@ -1,0 +1,608 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  overflow-x: hidden; 
+  overflow-y:auto;
+}
+
+/* navbar attributes */
+.navbar-default {
+  /*background-color: #29aae2;
+  border-color: #29aae2;*/
+  background: transparent;
+  border: transparent;
+}
+.navbar-default .navbar-brand {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.4em;
+  letter-spacing: 0.05px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navbar-default .navbar-brand-video{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.4em;
+  letter-spacing: 0.05px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-brand-video:hover, 
+.navbar-default .navbar-brand-video:focus{
+  color: #000000;
+  text-decoration: none;
+}
+
+
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 0.1px;
+  display: block;
+  font-weight: 400;
+  color: #dbdbdb;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  transition:0.5s ease;
+  color: #C5F9FF;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #d8d8d8;
+  background-color: #29aae2;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #d8d8d8;
+  background-color: #29aae2;
+}
+.navbar-default .navbar-toggle {
+  border-color: #29aae2;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #29aae2;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #d8d8d8;
+}
+
+.center-blockmedia (max-width: 767px){
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #d8d8d8;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #d8d8d8;
+    background-color: #29aae2;
+  }
+}
+/* end of navbar*/
+
+/* landing page banner*/
+#banner {
+  margin-bottom: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  clear: both;
+  /*background: transparent url(path/to/image/1.jpg) center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale')";
+*/}
+
+.wrap-center{
+  margin: 0 auto;
+  position: relative;
+  max-width: 55.231em;
+}
+
+.banner-centered {
+  text-align: left;
+  position: absolute;
+  display: block;
+  max-width: 55.231em;
+  height: inherit;
+  overflow: hidden;
+  margin-top: 200px;
+}
+
+.banner-centered h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3em;
+  line-height: 1.1;
+  /*text-transform: uppercase;*/
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 700;
+  display: block;
+}
+/* end of landing page banner*/
+
+
+/* challenges and solutions type specs */
+.whitetype p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  display: block;
+  font-weight: 300;
+  padding: 0;
+}
+
+.whitetype h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  display: block;
+  font-weight: 400;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.whitetype h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.8em;
+  line-height: 1em;
+  letter-spacing: 0em;
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.whitetype h1{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.8em;
+  /*background-color: #ffffff;
+  border-style: solid;
+  border-left: 0px;
+  border-width: 5px;
+  margin-right:1em;
+  padding:7px;*/
+  line-height: 0.9em;
+  letter-spacing: 0em;
+  color: #ffffff;
+  display: block;
+  border-style: solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0em;
+  border-width:6px;
+  padding-bottom:7px;
+  font-weight: 700;
+  /*opacity: 0.5;*/
+  margin-top: 0em;
+  max-width: 160px;
+}
+
+.blacktype h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  letter-spacing: 0em;
+
+  color: #000000;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+  padding: 0;
+}
+
+.blacktype p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 0.5px;
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  padding: 0;
+}
+
+.blacktype h1{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.8em;
+  /*background-color: #ffffff;
+  border-style: solid;
+  border-left: 0px;
+  border-width: 5px;
+  margin-right:1em;
+  padding:7px;*/
+  line-height: 0.9em;
+  letter-spacing: 0em;
+  color: #000000;
+  display: block;
+  border-style: solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0em;
+  border-width:6px;
+  padding-bottom:7px;
+  font-weight: 700;
+  /*opacity: 0.5;*/
+  margin-top: 0em;
+  max-width: 143px;
+}
+
+.label_billion_dev h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  background-color: #0F5268;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  display: block;
+  font-weight: 300;
+  width:159px;
+  padding: 5px;
+  margin-top:1.9em;
+}
+
+.label_citizen_engagement h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  background-color: #1D90A0;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  display: block;
+  font-weight: 300;
+  width:133px;
+  padding: 5px;
+}
+
+.label_ecosystems h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  background-color: #004168;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  display: block;
+  font-weight: 300;
+  width:140px;
+  padding: 5px;
+}
+
+.project_update h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  /*background-color: #f44242;*/
+  letter-spacing: 0.5px;
+  color: #f44242;
+  display: block;
+  font-weight: 700;
+  
+  
+  margin-top:1.9em;
+  
+}
+
+.label_ecosystems a:hover, a:visited, a:link, a:active{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* end of challenges and solutions type specs */
+
+/* team page specs */
+.team p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 0.1px;
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  margin-top: 15px;
+  padding: 0;
+
+}
+
+.team div{ 
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.team h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  letter-spacing: 0em;
+  color: #000000;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+/* padded section - team photos */
+.pad-section {
+  padding: 50px 0;
+
+}
+/* defines space between team photos */
+.pad-section img {
+  width: 100%;
+}
+
+
+/* end of team page specs */
+
+/* about page type specs */
+#about h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  letter-spacing: 0em;
+  color: #000000;
+  display: block;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+#about p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  letter-spacing: 0.5px;
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  padding: 0;
+}
+/* end of about page type specs*/
+
+/* video page type specs */
+#video p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  letter-spacing: 0.1px;
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  margin-top: 15px;
+  padding: 0;
+
+}
+
+#video div{ 
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#video h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3em;
+  line-height: 1em;
+  letter-spacing: 0em;
+  color: #000000;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 60px;
+  padding: 0;
+
+}
+
+/* end of video page type specs */
+
+/* project updates specs */
+.projects img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video a:hover, a:visited, a:link, a:active{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.project_update i{
+  color:#f44242;
+}
+
+.apply_now h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  background-color: #f44242;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  display: block;
+  font-weight: 300;
+  width:159px;
+  padding: 10px;
+  margin-top:1.9em;
+  margin-left: -24px;
+  text-align: center;
+}
+
+/* end of project updates specs */
+
+/* font-awesome icons for team page and footer*/
+i{
+  color:#363636;
+}
+
+i.fa.fa-linkedin{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.footer-right .fa {
+  color: #ffffff;
+}
+
+.fa-twitter:hover {
+    transition:0.5s ease;
+    color: #00ABE3;
+}
+
+.fa-user:hover {
+    transition:0.5s ease;
+    color: #e64522;
+}
+
+.fa-linkedin:hover {
+    transition:0.5s ease;
+    color: #007bb5;
+}
+
+.fa-vimeo:hover {
+    transition:0.5s ease;
+    color: #4EBBFF;
+}
+
+.fa-github:hover {
+    transition:0.5s ease;
+    color: #525252;
+}
+/* end of icons */
+
+/* FOOTER */
+.footer-distributed{
+  background-color: #212121;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+
+  padding: 75px 50px;
+}
+
+.footer-distributed .footer-left p{
+  color:  #8f9296;
+  font-size: 10px;
+  float: right;
+  margin-top: 10px;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+  font-size:18px;
+  font-weight: bold;
+  color:  #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-right{
+  float: left;
+  margin-bottom: 30px;
+  max-width: 180px;
+
+}
+
+.footer-distributed .footer-right a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color:  #262626;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right{
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links{
+    line-height: 1.8;
+  }
+}
+
+
+/*background for visible-sm */
+.challenge-cub123 {
+  background-color: #29aae2;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* landing page vision text tweaks for visible-sm*/
+.vision{
+  margin-top:16em;
+  margin-bottom: 7.7em;
+}
+.vision h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3em;
+  line-height: 1.1;
+  /*text-transform: uppercase;*/
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 700;
+  display: block;
+}
+
+
+
