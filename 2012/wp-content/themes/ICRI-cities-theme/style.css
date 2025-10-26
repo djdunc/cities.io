@@ -1,0 +1,290 @@
+/*
+Theme Name:     ICRI Cities Theme
+Theme URI:      http://cities.io
+Description:    Custom themem for ICRI Cities
+Author:         Artificialtourism
+Author URI:     http://www.artificialtourism.com/
+Template:       mentor
+Version:        1.0
+*/
+html {
+	margin-top: 10px !important;
+}
+
+html.skin_blue body {
+	background: #fff url(http://cities.io/2012/wp-content/themes/ICRI-cities-theme/img/bkg.gif) repeat-x 0 0;
+	font-size: 14px;
+}
+html.skin_blue p{
+	font-size: 14px;
+}
+ 
+html.skin_blue  h4
+    {
+        margin-bottom:18px;
+        
+ }
+
+
+html.skin_blue section.mainContentWrap {
+	padding-bottom: 50px;
+	min-height: 400px;
+	background: #fff;
+}
+html.skin_blue section.mainContentWrap h1{
+	margin-bottom: 1em;
+}
+
+/* typography */
+
+html.skin_blue blockquote {
+	padding-left: 0;
+}
+
+/*.navbar .brand img {
+	height: 78px;
+	width: 195px;
+	margin: 8px 10px 0 0;
+}*/
+
+html.skin_blue .navbar {
+	background: url("http://cities.io/2012/wp-content/themes/ICRI-cities-theme/img/head_line_btm.gif") repeat-x scroll 0 100% transparent !important;
+}
+.navbar .brand {
+	border-color: 2px solid #73cee6;
+}
+html.skin_blue .navbar .nav > li > a{
+	font-size: 13px !important;
+	text-transform: uppercase;
+}
+html.skin_blue .navbar .nav {
+	margin-top: 43px;
+	font-size: 15px !important;
+}
+html.skin_blue .navbar .nav > li > a {
+	border-color: #dddddd;
+	color: #979795;
+}
+html.skin_blue .navbar .nav > li > a:hover {
+	color: #333;
+	border-color: #73cee6;
+}
+
+html.skin_blue .navbar .nav .active > a,
+	html.skin_blue .navbar .nav .active > a:hover {
+	background-color: #fff;
+	color: #45494a;
+	border-color: #73cee6;
+}
+.navbar .nav .active .caret {
+        border-top-color:#45494a !important;
+}
+.mainContent{
+        padding-top:24px;
+        border-top:none;
+}
+
+/* tagline */
+
+html.skin_blue .tagline h2{
+	font-size: 17px !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+}
+
+/* Homepage theme navigation in three cols  */
+
+html.skin_blue .themes h2{
+	background-color: #eeeeee;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+	font-size: 19px;
+	padding: 0 10px;
+	font-weight: bold;
+}
+html.skin_blue .themes .phil h2{
+	color: #176dbe;
+}
+html.skin_blue .themes .design h2{
+	color: #e76e06;
+}
+html.skin_blue .themes .city h2{
+	color: #669933;
+}
+
+.themes ul{
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.themes ul li{
+	background: #eee;
+	vertical-align: middle;
+	font-size: 17px;
+	height: 60px;
+	line-height: 60px;
+	margin-bottom: 1px;
+}
+.themes ul li a{
+	color: #fff;
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 60px;
+	line-height: 60px;
+}
+.themes ul li:first-child a{
+	background: url(http://cities.io/2012/wp-content/themes/ICRI-cities-theme/img/arr_grey.png) no-repeat;
+}
+.themes .phil ul li a{
+	background-color: #176dbe;
+}
+.themes .design ul li a{
+	background-color: #e76e06;
+}
+.themes .city ul li a{
+	background-color: #669933;
+}
+
+.themes ul li a:hover{
+	background-color: #313536;
+}
+
+.themes ul li span, .themes h2 span {
+    display             : -moz-inline-box;  /* FF2 or lower */
+    display             : inline-block;     /* FF3, Opera, Safari */
+    line-height         : normal;
+    vertical-align      : middle;   
+}
+
+.themes h2 span{
+	line-height: 95%;
+}
+
+.themes ul li a span, .themes h2 span { *display  : inline;} /* haslayout for IE6/7 */
+
+/* footer */
+
+html.skin_blue footer{
+	margin-top: 0;
+}
+html.skin_blue footer .footerMain {
+	padding-top: 10px;
+	font: .95em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: #313536;
+	border-color: #202324;
+}
+footer .footerMain a:hover{
+        text-decoration:none;
+        color: #76d5ff;
+    }
+.footerMain .span2{
+	width: auto;
+	padding-right:30px;
+	padding-bottom: 18px;
+}
+.footerMain .logos{
+	text-align: right;
+	padding-right:0;
+	float: right;
+	padding-top: 5px;
+}
+.footerMain ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.footerMain a{
+	color: #ebebeb;
+}
+.footerMain a:hover{
+	color: #ebebeb;
+}
+html.skin_blue footer .footerMain h2{
+	margin-bottom: .3em;
+	font: normal small-caps bold 1.3em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: lowercase;
+}
+html.skin_blue footer .footerLower {
+	border: none;
+	background-color: #313536;
+	color: #f9f9f9;
+}
+footer .footerLower .row-fluid{
+	border-top: 1px solid #202324;
+	padding-top: 20px;
+}
+footer .footerLower .smedia p{
+	text-align: right;
+	padding-right: 12px;
+}
+
+/* team */
+html.skin_blue a.peOver {
+	background: #fff;
+}
+html.skin_blue a.peOver span.linkIcon, html.skin_blue a.peOver span.overIcon{
+    background: none!important;
+}
+html.skin_blue .portfolioItem p{
+	height: auto;
+	margin-bottom: 12px;
+}
+img.alignnone, img.alignleft, img.alignright{
+	vertical-align: top;
+}
+img.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+/*normal desktop*/
+    /*----------------------------------------------------------------------*/
+ @media (min-width: 980px) {   
+    .footerMain .logos .intel{
+	padding-left: 50px;
+	display: block;
+	padding-top: 10px;
+	}     
+ }
+    
+/*iPad portrait*/
+/*----------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+.footerMain .logos{
+	padding-right:0;
+	float: right;
+	padding-top: 5px;
+}
+.footerMain .logos .intel{
+	padding-right: 0px;
+}
+.footerMain .logos img{
+	display: block;
+}
+
+}
+/*iphone landscape*/
+/*----------------------------------------------------------------------*/
+@media (max-width: 767px) {
+	html.skin_blue body{
+	background-image: none !important;
+}
+	/*logos to left*/
+	.footerMain .logos{
+	text-align: left !important;
+	padding-right:0;
+	float: none;
+	padding-top: 5px;
+}
+
+.themes ul li.disab{
+	display: none;
+}
+}
